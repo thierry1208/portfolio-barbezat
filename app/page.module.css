@@ -1,0 +1,13 @@
+.container {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background: var(--bg-primary);
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}

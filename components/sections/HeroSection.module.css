@@ -1,0 +1,128 @@
+.decorLine {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(200, 170, 120, 0.05), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 24px;
+  max-width: 880px;
+}
+
+.overline {
+  font-size: 11px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: rgba(200, 170, 120, 0.55);
+  font-family: var(--font-body);
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 7vw, 86px);
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.titleAccent {
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.tagline {
+  font-family: var(--font-body);
+  font-size: clamp(15px, 1.8vw, 19px);
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 28px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.taglineStrong {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.ctas {
+  margin-top: 44px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary {
+  padding: 15px 42px;
+  background: transparent;
+  border: 1px solid rgba(200, 170, 120, 0.4);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-family: var(--font-body);
+  font-weight: 500;
+  transition: all 0.4s;
+}
+
+.ctaPrimary:hover {
+  background: var(--accent);
+  color: var(--bg-primary);
+}
+
+.ctaGhost {
+  padding: 15px 42px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-family: var(--font-body);
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.ctaGhost:hover {
+  color: #fff;
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.scrollLine {
+  width: 1px;
+  height: 44px;
+  background: linear-gradient(to bottom, rgba(200, 170, 120, 0.4), transparent);
+  animation: scrollPulse 2.2s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scaleY(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1.15);
+  }
+}

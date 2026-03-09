@@ -1,0 +1,168 @@
+.inner {
+  max-width: 700px;
+  padding: 0 40px;
+  width: 100%;
+}
+
+.overline {
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(200, 170, 120, 0.5);
+  font-family: var(--font-body);
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.5vw, 42px);
+  color: #fff;
+  font-weight: 400;
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+
+.accent {
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.38);
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 36px;
+  max-width: 520px;
+}
+
+/* ─── Form ───────────────────────────────────────────────── */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.inputRow {
+  display: flex;
+  gap: 0;
+}
+
+.input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-right: none;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 300;
+  padding: 14px 18px;
+  outline: none;
+  transition: border-color 0.3s;
+  min-width: 0;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.input:focus {
+  border-color: rgba(200, 170, 120, 0.4);
+}
+
+.input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn {
+  padding: 14px 28px;
+  background: transparent;
+  border: 1px solid rgba(200, 170, 120, 0.4);
+  color: var(--accent);
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.35s;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+}
+
+.btn:hover:not(:disabled) {
+  background: var(--accent);
+  color: var(--bg-primary);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid rgba(200, 170, 120, 0.3);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.hint {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.18);
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+/* ─── Pills ──────────────────────────────────────────────── */
+.pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  padding: 4px 12px;
+  font-size: 10px;
+  font-family: var(--font-body);
+  color: rgba(200, 170, 120, 0.45);
+  border: 1px solid rgba(200, 170, 120, 0.1);
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .inputRow {
+    flex-direction: column;
+  }
+
+  .input {
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: none;
+  }
+
+  .input:focus {
+    border-color: rgba(200, 170, 120, 0.4);
+  }
+
+  .btn {
+    min-width: unset;
+  }
+}

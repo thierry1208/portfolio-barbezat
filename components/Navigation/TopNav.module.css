@@ -1,0 +1,142 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 300;
+  padding: 20px 40px;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scrolled {
+  padding: 14px 40px;
+  background: rgba(12, 12, 14, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 400;
+  background: none;
+  border: none;
+  cursor: pointer;
+  letter-spacing: -0.02em;
+}
+
+.links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.link {
+  background: none;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 0;
+}
+
+.link:hover {
+  color: var(--accent);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.bar {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.barOpen1 {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.barOpen2 {
+  opacity: 0;
+}
+
+.barOpen3 {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 40px 24px;
+  gap: 2px;
+  background: rgba(12, 12, 14, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.mobileLink {
+  background: none;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 12px 0;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: color 0.3s;
+}
+
+.mobileLink:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 16px 20px;
+  }
+
+  .scrolled {
+    padding: 12px 20px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobileMenu {
+    padding: 16px 20px 20px;
+  }
+}
