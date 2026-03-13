@@ -12,9 +12,9 @@
 
   /* Text */
   --text-primary:   #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.65);
-  --text-tertiary:  rgba(255, 255, 255, 0.4);
-  --text-muted:     rgba(255, 255, 255, 0.25);
+  --text-secondary: rgba(255, 255, 255, 0.82);
+  --text-tertiary:  rgba(255, 255, 255, 0.6);
+  --text-muted:     rgba(255, 255, 255, 0.42);
 
   /* Borders */
   --border:         rgba(255, 255, 255, 0.05);
@@ -88,7 +88,7 @@ a {
   font-size: 11px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: rgba(200, 170, 120, 0.5);
+  color: rgba(200, 170, 120, 0.75);
   font-family: var(--font-body);
   margin-bottom: 14px;
   font-weight: 500;
@@ -133,7 +133,7 @@ a {
   padding: 4px 12px;
   font-size: 10px;
   font-family: var(--font-body);
-  color: rgba(200, 170, 120, 0.55);
+  color: rgba(200, 170, 120, 0.8);
   border: 1px solid rgba(200, 170, 120, 0.12);
   letter-spacing: 0.05em;
   font-weight: 400;
@@ -164,7 +164,7 @@ a {
   padding: 15px 42px;
   background: none;
   border: none;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.55);
   text-decoration: none;
   font-size: 12px;
   letter-spacing: 0.16em;
@@ -183,7 +183,7 @@ a {
 .footerLink {
   font-family: var(--font-body);
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.45);
   text-decoration: none;
   letter-spacing: 0.1em;
   text-transform: uppercase;
