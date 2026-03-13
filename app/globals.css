@@ -221,4 +221,16 @@ a {
     right: 10px !important;
     gap: 10px !important;
   }
+
+  .snapContainer {
+    scroll-snap-type: none;
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .snapSlide {
+    height: auto;
+    min-height: 100vh;
+    scroll-snap-align: none;
+  }
 }
