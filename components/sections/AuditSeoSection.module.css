@@ -32,7 +32,7 @@
 .desc {
   font-family: var(--font-body);
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.38);
+  color: rgba(255, 255, 255, 0.68);
   line-height: 1.8;
   font-weight: 300;
   margin-bottom: 36px;
@@ -68,7 +68,7 @@
 }
 
 .input::placeholder {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .input:focus {
@@ -126,7 +126,7 @@
 .hint {
   font-family: var(--font-body);
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.42);
   font-weight: 300;
   letter-spacing: 0.03em;
 }

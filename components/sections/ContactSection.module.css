@@ -34,7 +34,7 @@
 .subtitle {
   font-family: var(--font-body);
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.32);
+  color: rgba(255, 255, 255, 0.60);
   margin-bottom: 32px;
   font-weight: 300;
   line-height: 1.7;
@@ -86,7 +86,7 @@
 
 .input::placeholder,
 .textarea::placeholder {
-  color: rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.42);
 }
 
 .input:focus,
@@ -160,7 +160,7 @@
 .footerLink {
   font-family: var(--font-body);
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.48);
   text-decoration: none;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -178,7 +178,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.04);
   font-family: var(--font-body);
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.68);
   letter-spacing: 0.05em;
 }
 
