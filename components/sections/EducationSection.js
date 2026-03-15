@@ -31,7 +31,9 @@ export default function EducationSection() {
                 transition: `opacity 0.4s cubic-bezier(0.16,1,0.3,1) ${0.15 + i * 0.13}s, clip-path 0.8s cubic-bezier(0.16,1,0.3,1) ${0.15 + i * 0.13}s`,
               }}
             >
-              <div className={styles.logo}>{e.logo}</div>
+              <div className={styles.logo}>
+                <img src={e.logo} alt={e.org} className={styles.logoImg} />
+              </div>
               <div className={styles.info}>
                 <div className={styles.rowTitle}>{e.title}</div>
                 <div className={styles.rowSub}>{e.sub}</div>
