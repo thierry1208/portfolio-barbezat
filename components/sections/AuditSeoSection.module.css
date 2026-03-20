@@ -4,13 +4,26 @@
   width: 100%;
 }
 
+.overlineRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.n8nLogo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
 .overline {
   font-size: 11px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: rgba(200, 170, 120, 0.5);
   font-family: var(--font-body);
-  margin-bottom: 14px;
   font-weight: 500;
 }
 

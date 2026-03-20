@@ -87,8 +87,9 @@ export default function AuditSeoSection() {
       gradient="linear-gradient(160deg, #0c0c0e 0%, #12121a 100%)"
     >
       <div ref={ref} className={styles.inner}>
-        <div style={item(0)}>
-          <p className={styles.overline}>Démonstration live · Automatisation n8n</p>
+        <div style={item(0)} className={styles.overlineRow}>
+          <img src="/images/logo_school/logo-n8n.webp" alt="n8n" className={styles.n8nLogo} />
+          <p className={styles.overline}>Projet réalisé avec n8n — démonstration live</p>
         </div>
         <h2 className={styles.title} style={item(1)}>
           Audit SEO <span className={styles.accent}>instantané</span>
@@ -96,6 +97,9 @@ export default function AuditSeoSection() {
         <p className={styles.desc} style={item(2)}>
           Saisissez n&apos;importe quelle URL — un agent IA analyse la page et génère un rapport SEO
           complet en quelques secondes.
+        </p>
+        <p className={styles.desc} style={item(2)}>
+          Ce workflow a été entièrement conçu et développé avec n8n incluant 2 agents IA — essayez-le en direct.
         </p>
 
         <form onSubmit={handleSubmit} className={styles.form} style={item(3)}>
